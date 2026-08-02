@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chewy&display=swap');
+
+::-webkit-scrollbar{
+    display: none;
+}
+body{
+    font-family: 'Poppins';
+    padding: 0px 10% 0px 10%;
+    background-image: linear-gradient(to bottom, #0B1120, #8B5CF6);
+    background-repeat: no-repeat;
+    /* height: 100vh; */
+    color: white;
+    transition: none !important;
+}
+menu::before{
+    opacity: 0.5;
+    backdrop-filter: blur(10px);
+    z-index: -1;
+}
+menu{
+    display: flex;
+    width: 80%;
+
+    align-items: center;
+    position: absolute;
+    box-sizing: border-box;
+}
+span{
+    color:#C084FC;
+}
+.links{
+    width: 80%;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+li a{
+    content: "wyhjenc to";
+}
+#about{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#about-tidesc p{
+    margin: 0px;
+}
+#not-ai{
+    background-color: rgb(255, 119, 119);
+    color: rgb(114, 5, 5);
+    border-radius: 10px;
+    border: 2px solid red;
+    box-shadow: 1px 1px 10px red;
+    text-align: center;
+}
+#about img{
+    padding: 10px;
+}
+#skills{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social-container{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.socials{
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding-right: 10px;
+    border-radius: 20px;
+}
+
+.socials img{
+    width: 25px;
+    height: 25px;
+}
+.github{
+    background-color: black;
+}
+.linkedin{
+    background-color: #0e76a8;
+}
