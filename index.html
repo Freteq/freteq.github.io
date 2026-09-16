@@ -3,44 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>Freteq</title>
 </head>
 <body>
-    <menu>
+    <header>
         <h1>Freteq</h1>
-        <ul class="links">
-            <li><a href="#about">About</a></li>
-            <li>Skills</li>
-            <li>Projects</li>
-            <li>Contact</li>
+        <ul class="header-linki">
+            <li><a class="link" href="#dokumentacja">Projekty</a></li>
+            <li><a class="link" href="#kontakt">GitHub Page</a></li>
+            <li><a class="link" href="#panel">Kontakt</a></li>
+            <li><a class="link"  href="#" onclick="changeMode()">☀️/🌙</a></li>
         </ul>
-    </menu>
-    <section id="about">
-        <section id="about-tidesc">
-            <h1>Hello, I'm <span>Daniel</span></h1>
-            <p>I'm a Junior Web Developer specializing mostly in Backend</p>
-            <p>Sometimes i even makes bots for Discord Servers</p>
-            <h2 id="not-ai">This picture <u>IS NOT</u> AI generated!</h2>
-        </section>
-        <img src="jabeztla.png" alt="autoportret">
-    </section>
-    <section id="skills">
-        <section class="skillbox">
-            <p></p>
-        </section>
-        <section class="skillbox">
-            <p></p>
-        </section>
-        <section class="skillbox">
-            <p></p>
-        </section>
-        <section class="skillbox">
-            <p></p>
-        </section>
-        <section class="skillbox">
-            <p></p>
-        </section>
-    </section>
+    </header>
+    <main>
+        <div id="welcome">
+            <h1>Make your imagination <br>come visible</h1>
+            <img src="welcome image.svg" width="400px">
+        </div>
+        <div id="dsc-html-info">
+            <h1>From <span style="color: #7289DA;">Discord</span> bots <br>to sites <br>and desktop <span style="color:red;">app</span>s</h1>
+        </div>
+    </main>
 </body>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+    html{
+        font-family: "Poppins";
+    }
+    body{
+        margin: 0px;
+        padding: 0px;
+        background-color: black;
+        color: white;
+    }
+    header{
+        margin: 0% 20% 0% 20%;
+        width: 60%;
+        display: flex;
+        align-items: center;
+        position: absolute;
+    }
+    header h1{
+        width: 50%;
+    }
+    .header-linki{
+        list-style-type: none;
+        display: flex;
+        justify-content: space-around;
+        width: 50%;
+    }
+    a{
+        text-decoration: none;
+        color: white;
+    }
+    main{
+        margin: 0% 20% 0% 20%;
+    }
+    #welcome{
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+    .light-mode, .light-mode a{
+        background-color: white;
+        color: black;
+    }
+    #dsc-html-info{
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+</style>
+<script>
+function changeMode(){
+    let element = document.body;
+    element.classList.toggle("light-mode");
+}
+</script>
 </html>
